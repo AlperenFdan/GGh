@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Deneyim | Melis Karakaş</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: #fff;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        .background-blobs {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .blob {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            filter: blur(80px);
+            border-radius: 50%;
+            opacity: 0.4;
+        }
+
+        .blob-1 {
+            top: -100px;
+            right: -100px;
+        }
+
+        .blob-2 {
+            bottom: -100px;
+            left: -100px;
+            background: #3b82f6;
+        }
+
+        .glass-nav {
+            padding: 20px 0;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+        }
+
+        .logo span {
+            color: #6366f1;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #ccc;
+            text-decoration: none;
+            margin-left: 30px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #fff;
+        }
+
+        .contact-btn {
+            background: #fff;
+            color: #0f172a !important;
+            padding: 8px 20px;
+            border-radius: 50px;
+        }
+
+        .main-content {
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(15px);
+            padding: 60px;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            max-width: 800px;
+        }
+
+        .badge {
+            background: rgba(99, 102, 241, 0.2);
+            color: #818cf8;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .main-title {
+            font-size: 3.5rem;
+            margin-top: 20px;
+            line-height: 1.1;
+        }
+
+        .main-title span {
+            background: linear-gradient(to right, #6366f1, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .description {
+            color: #94a3b8;
+            margin: 25px 0;
+            font-size: 1.1rem;
+        }
+
+        /* Butonlar */
+        .primary-button {
+            background: linear-gradient(90deg, #6366f1, #4f46e5);
+            color: white;
+            border: none;
+            padding: 15px 35px;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+        }
+
+        .secondary-link {
+            margin-left: 20px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .minimal-footer {
+            text-align: center;
+            padding: 30px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <header class="glass-nav">
+        <div class="container">
+            <div class="logo">MK<span>.</span></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Keşfet</a></li>
+                    <li><a href="#">Projeler</a></li>
+                    <li><a href="#" class="contact-btn">Bize Yazın</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="glass-card">
+            <span class="badge">Yeni Nesil Tasarım</span>
+            <h1 class="main-title">Fikirleri Gerçeğe <br><span>Dönüştürün</span></h1>
+            <p class="description">
+                Sadece kod yazmıyoruz, dijital dünyada iz bırakacak estetik ve hızlı kullanıcı deneyimleri inşa
+                ediyoruz.
+            </p>
+            <div class="actions">
+                <button class="primary-button">Hemen Tanışalım</button>
+                <a href="#" class="secondary-link">Portfolyoyu Gör →</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="minimal-footer">
+        <p>&copy; 2026 Melis Karakaş. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+
+</html>
